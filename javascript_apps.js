@@ -1,32 +1,3 @@
-/*
-// 1. npx js-to-ts-converter /Users/ar-sreedhar.k/Desktop/rakuten/javascript/node_1
-// 2. npx javascript-to-typescript /Users/ar-sreedhar.k/Desktop/rakuten/javascript/node_1
-// above are the commands for js-to-ts-conversion
-var http = require('http');
-var express = require('express'); 
-var router = express.Router();
-function main_server(){
-http.createServer(function (req, res) {
-    res.writeHead(200, {
-        'Content-Type': 'text/html'
-    });
-    res.write(`\n    <!DOCTYPE html>\n    \
-    <html>\n    <head>\n    <title>Title of the document</title>\n   \
-     </head>\n    \n    <body>\n    The content of the document......\n    \
-     <h1>Hi there!!!Hi there!!!Hi there!!!Hi there!!!Hi there!!!\
-     Hi there!!!Hi there!!!Hi there!!!Hi there!!!Hi there!!!\
-     Hi there!!!Hi there!!!Hi there!!!Hi there!!!Hi there!!!Hi there!!!\
-     Hi there!!!Hi there!!!Hi there!!!</h1>\n    \
-     <h2>What's up!!</h2>\n    </body>\n    \n    </html>\n    `);
-    res.write("");
-    res.end();
-}).listen(8888, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:8888');
-}
-main_server()
-*/
-
-//     http://localhost:3000/front_page.html
 const express = require("express");
 const app = express();
 const PORT = 3000;
