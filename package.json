@@ -1,0 +1,19 @@
+{
+  "name": "javascript-applications",
+  "version": "1.0.0",
+  "description": "Commands to run before running this:<b>npm install express</b> <br>\r Command to run the app: <b>node javascript_apps.js</b><br>\r To view the output: http://localhost:3000",
+  "main": "javascript_apps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreegithub19/JavaScript-Applications.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sreegithub19/JavaScript-Applications/issues"
+  },
+  "homepage": "https://github.com/sreegithub19/JavaScript-Applications#readme"
+}
