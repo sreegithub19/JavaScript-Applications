@@ -5,7 +5,8 @@ const open = require('open');
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send('index.html');
+  //res.send('index.html');
+  
 });
 
 app.get("/sudoku",(req,res)=>{
