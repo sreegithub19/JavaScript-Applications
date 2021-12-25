@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sreegithub19/JavaScript-Applications/issues"
   },
-  "homepage": "https://github.com/sreegithub19/JavaScript-Applications#readme"
+  "homepage": "https://github.com/sreegithub19/JavaScript-Applications#readme",
+  "dependencies": {
+    "open": "^8.4.0"
+  }
 }
