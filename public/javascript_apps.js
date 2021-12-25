@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 const open = require('open');
-app.use(express.static("folders"));
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   res.send(
@@ -12,22 +12,21 @@ app.get("/", (req, res) => {
             WELCOME TO JAVASCRIPT APPLICATIONS!!</h1> \
    <h3 style="text-align:center;"> Click on any of the below JavaScript apps!</h3>\
    <div class="parent"> <ul>\
-        <li><a href=\'http://localhost:3000/calculator\'>Calculator</a></li> \
-       <li><a href=\'http://localhost:3000/maze\'>Maze</a></li>\
-        <li><a href=\'http://localhost:3000/tic_tac_toe\'>Tic-tac-toe</a></li>\
-        <li><a href=\'http://localhost:3000/clock\'>Analogue clock</a></li>\
-        <li><a href=\'http://localhost:3000/hangman\'>Hangman</a></li>\
-        <li><a href=\'http://localhost:3000/puzzles\'>Estonian puzzles</a></li>\
-        <li><a href=\'http://localhost:3000/sudoku/index.html\'>Sudoku</a></li>\
-        <li><a href=\'http://localhost:3000/virtual_keyboard\'>Virtual keyboard</a></li>\
-           \
+        <li><a href=\'/calculator\'>Calculator</a></li> \
+       <li><a href=\'/maze\'>Maze</a></li>\
+        <li><a href=\'/tic_tac_toe\'>Tic-tac-toe</a></li>\
+        <li><a href=\'/clock\'>Analogue clock</a></li>\
+        <li><a href=\'/hangman\'>Hangman</a></li>\
+        <li><a href=\'/puzzles\'>Estonian puzzles</a></li>\
+        <li><a href=\'/sudoku\'>Sudoku</a></li>\
+        <li><a href=\'/virtual_keyboard\'>Virtual keyboard</a></li>\
    </ul> </div> \
        </div> </body> </html>'
   );
 });
 
-app.get("/sudoku/index.html",(req,res)=>{
-    res.send(`sudoku/index.html`);
+app.get("/sudoku",(req,res)=>{
+    res.send(`./sudoku/index.html`);
 });
 
 app.get("/puzzles",(req,res)=>{
@@ -265,11 +264,11 @@ return this;
 
     <script>
     var images = [
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/neeruti.jpg', title: 'Neeruti manor' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/harju_madise.jpg', title: 'Harju-Madis Church' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/rahumae.jpg', title: 'Rahumäe train station' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/kakumae.jpg', title: 'Kakumäe Harbor' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/kohila.jpg', title: 'Kohila mill' }
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/puzzle/img/neeruti.jpg', title: 'Neeruti manor' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/puzzle/img/harju_madise.jpg', title: 'Harju-Madis Church' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/puzzle/img/rahumae.jpg', title: 'Rahumäe train station' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/puzzle/img/kakumae.jpg', title: 'Kakumäe Harbor' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/puzzle/img/kohila.jpg', title: 'Kohila mill' }
     ];
     
     $(function () {
@@ -1994,4 +1993,4 @@ app.get("/virtual_keyboard",(req,res)=>{
 });
 
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
-open('http://localhost:3000');
+//open('http://localhost:3000');

@@ -5,7 +5,7 @@
   "main": "javascript_apps.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./public/javascript_apps.js"
+    "start": "nodemon ./public/javascript_apps.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sreegithub19/JavaScript-Applications#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "nodemon": "^2.0.15",
     "open": "^8.4.0"
   },
   "devDependencies": {}
