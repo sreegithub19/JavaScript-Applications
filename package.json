@@ -4,7 +4,8 @@
   "description": "Commands to run before running this:<b>npm install express</b> <br>\r Command to run the app: <b>node javascript_apps.js</b><br>\r To view the output: http://localhost:3000",
   "main": "javascript_apps.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node javascript_apps.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,6 @@
   "homepage": "https://github.com/sreegithub19/JavaScript-Applications#readme",
   "dependencies": {
     "open": "^8.4.0"
-  }
+  },
+  "devDependencies": {}
 }

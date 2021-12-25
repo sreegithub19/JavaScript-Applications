@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 const open = require('open');
-app.use(express.static("public"));
+app.use(express.static("folders"));
 
 app.get("/", (req, res) => {
   res.send(
@@ -265,11 +265,11 @@ return this;
 
     <script>
     var images = [
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/neeruti.jpg', title: 'Neeruti manor' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/harju_madise.jpg', title: 'Harju-Madis Church' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/rahumae.jpg', title: 'Rahumäe train station' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/kakumae.jpg', title: 'Kakumäe Harbor' },
-        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/kohila.jpg', title: 'Kohila mill' }
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/neeruti.jpg', title: 'Neeruti manor' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/harju_madise.jpg', title: 'Harju-Madis Church' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/rahumae.jpg', title: 'Rahumäe train station' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/kakumae.jpg', title: 'Kakumäe Harbor' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/folders/puzzle/img/kohila.jpg', title: 'Kohila mill' }
     ];
     
     $(function () {
