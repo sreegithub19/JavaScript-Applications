@@ -2657,6 +2657,7 @@ html[subframe] body {
 
 </html>
 `);
+});
 
 app.get("/solitaire",(req,res)=>{
     res.send(`
