@@ -37,7 +37,7 @@ app.get('/codepen/html', (req, res) => {
                 <title>Code Editor</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                <link rel="stylesheet" href="/css">
+                <link rel="stylesheet" href="/codepen/css">
             </head>
 
             <body>
@@ -47,7 +47,7 @@ app.get('/codepen/html', (req, res) => {
                 <textarea id="js" placeholder="JavaScript"></textarea>
                 <iframe id="code"></iframe>
 
-                <script type="text/javascript" src="/scripts">
+                <script type="text/javascript" src="/codepen/scripts">
                     
                 </script>
 
